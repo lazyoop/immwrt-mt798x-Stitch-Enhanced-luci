@@ -13,6 +13,8 @@ LUCI_PKGARCH:=all
 PKG_LICENSE:=Apache-2.0
 PKG_MAINTAINER:=Dan Luedtke <mail@danrl.com>
 
+PKG_PROVIDES:=luci-app-wireguard
+
 include ../../luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
