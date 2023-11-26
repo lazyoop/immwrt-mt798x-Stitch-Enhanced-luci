@@ -1,0 +1,18 @@
+SIM卡信号 质量/强度 ➜ AT+CSQ;AT+CSQ
+SIM卡状态 AT+CPIN;AT+CPIN?
+模块sn序列号 ➜ AT+CGSN;AT+CGSN=0
+模块IMEI序列号 ➜ AT+CGSN;AT+CGSN=1
+模块IMEISV序列号 ➜ AT+CGSN;AT+CGSN=2
+模块SVN ➜ AT+CGSN;AT+CGSN=3
+固件版本 ➜ AT+CGMR;AT+CGMR
+重启模块 ➜ AT+NRB;AT+NRB
+重启模块 ➜ AT+NRB;AT+NRB
+查询网络激活状态 AT+CGATT;AT+CGATT?
+查询网络当前连接状态 AT+CSCON;AT+CSCON?
+自动上报网络注册状态 AT+CEREG;AT+CEREG=1
+模块RF状态 AT+CFUN;AT+CFUN?
+打开模块RF AT+CFUN;AT+CFUN=1
+关闭模块RF(不可上网、打电话) AT+CFUN;AT+CFUN=0
+
+
+
