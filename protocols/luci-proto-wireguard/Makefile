@@ -13,7 +13,7 @@ LUCI_PKGARCH:=all
 PKG_LICENSE:=Apache-2.0
 PKG_MAINTAINER:=Dan Luedtke <mail@danrl.com>
 
-PKG_PROVIDES:=luci-app-wireguard
+PKG_PROVIDES:=luci-proto-wireguard
 
 include ../../luci.mk
 
