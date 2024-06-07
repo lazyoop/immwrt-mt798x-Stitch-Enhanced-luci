@@ -4722,7 +4722,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 						E('p', _('If the IP address used to access LuCI changes, a <strong>manual reconnect to the new IP</strong> is required within %d seconds to confirm the settings, otherwise modifications will be reverted.').format(L.env.apply_rollback)),
 						E('div', { 'class': 'right' }, [
 							E('button', {
-								'class': 'btn',
+								'class': 'btn cbi-button',
 								'click': rejectFn,
 							}, [ _('Cancel') ]), ' ',
 							E('button', {
