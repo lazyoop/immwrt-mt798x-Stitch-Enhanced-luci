@@ -4221,7 +4221,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 							}
 						}),
 						E('button', {
-							'class': 'btn',
+							'class': 'btn cbi-button',
 							'click': function(ev) {
 								ev.target.previousElementSibling.click();
 							}
@@ -4229,7 +4229,7 @@ var UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 					]),
 					E('div', { 'class': 'right', 'style': 'flex:1' }, [
 						E('button', {
-							'class': 'btn',
+							'class': 'btn cbi-button',
 							'click': function() {
 								UI.prototype.hideModal();
 								rejectFn(new Error(_('Upload has been cancelled')));
