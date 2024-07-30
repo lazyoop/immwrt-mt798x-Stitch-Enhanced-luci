@@ -54,23 +54,29 @@ get_adlist() (
 
 adlist_update() {
     [ "$(uci -q get mosdns.config.adblock)" != 1 ] && exit 0
+    lock_file=/var/lock/mosdns_ad_update.lock
     ad_source=$(uci -q get mosdns.config.ad_source)
     AD_TMPDIR=$(mktemp -d) || exit 1
-    google_status=$(curl -I -4 -m 3 -o /dev/null -s -w %{http_code} http://www.google.com/generate_204)
     mirror=""
     : > /etc/mosdns/rule/.ad_source
+    if [ -f "$lock_file" ]; then
+        has_update=0
+        exit 0
+    else
+        : > $lock_file
+    fi
     has_update=0
     for url in $ad_source;
     do
         if [ "$url" != "geosite.dat" ] && [ $(echo "$url" | grep -c -E "^file://") -eq 0 ]; then
+            has_update=1
             echo "$url" >> /etc/mosdns/rule/.ad_source
             filename=$(basename $url)
             if echo "$url" | grep -Eq "^https://raw.githubusercontent.com" ; then
-                [ "$google_status" -ne "204" ] && mirror="https://ghproxy.com/"
+                [ -n "$(uci -q get mosdns.config.github_proxy)" ] && mirror="$(uci -q get mosdns.config.github_proxy)/"
             fi
             echo -e "\e[1;32mDownloading $mirror$url\e[0m"
             curl --connect-timeout 5 -m 90 --ipv4 -kfSLo "$AD_TMPDIR/$filename" "$mirror$url"
-            has_update=1
         fi
     done
     if [ $? -ne 0 ]; then
@@ -82,15 +88,14 @@ adlist_update() {
             mkdir -p /etc/mosdns/rule/adlist
             rm -rf /etc/mosdns/rule/adlist/*
             \cp $AD_TMPDIR/* /etc/mosdns/rule/adlist
-            rm -rf "$AD_TMPDIR"
         }
     fi
+    rm -rf "$AD_TMPDIR" $lock_file
 }
 
 geodat_update() (
     TMPDIR=$(mktemp -d) || exit 1
-    google_status=$(curl -I -4 -m 3 -o /dev/null -s -w %{http_code} http://www.google.com/generate_204)
-    [ "$google_status" -ne "204" ] && mirror="https://ghproxy.com/"
+    [ -n "$(uci -q get mosdns.config.github_proxy)" ] && mirror="$(uci -q get mosdns.config.github_proxy)/"
     # geoip.dat - cn-private
     echo -e "\e[1;32mDownloading "$mirror"https://github.com/Loyalsoldier/geoip/releases/latest/download/geoip-only-cn-private.dat\e[0m"
     curl --connect-timeout 5 -m 60 --ipv4 -kfSLo "$TMPDIR/geoip.dat" ""$mirror"https://github.com/Loyalsoldier/geoip/releases/latest/download/geoip-only-cn-private.dat"
