@@ -36,7 +36,8 @@ m = Map("aria2", "%s - %s" % { translate("Aria2"), translate("Settings") },
 "<p>%s</p><p>%s</p>" % {
 	translate("Aria2 is a lightweight multi-protocol &amp; multi-source, cross platform download utility."),
 	translatef("For more information, please visit: %s",
-		"<a href=\"https://aria2.github.io\" target=\"_blank\">https://aria2.github.io</a>")
+		"<a href=\"https://aria2.github.io\" target=\"_blank\">https://aria2.github.io</a>"),
+	translate("Note: It is recommended to modify the configuration file to a non-squashfs area before using Aria2, otherwise the session file will exhaust the available space."),
 })
 
 if not aria2 then

@@ -1,8 +1,6 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2021-11-17 12:16+0000\n"
-"Last-Translator: Eric <spice2wolf@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsaria2/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,6 +40,12 @@ msgid ""
 "Aria2 is a lightweight multi-protocol &amp; multi-source, cross platform "
 "download utility."
 msgstr "Aria2 是一个轻量、多线程，跨平台的下载工具。"
+
+#: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:38
+msgid ""
+"Note: It is recommended to modify the configuration file to a non-squashfs area "
+"before using Aria2, otherwise the session file will exhaust the available space."
+msgstr "注意: 使用Aria2前推荐修改配置文件到非squashfs区域,否则会话文件会将可用空间耗尽。"
 
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:428
 msgid "Auto save interval"
