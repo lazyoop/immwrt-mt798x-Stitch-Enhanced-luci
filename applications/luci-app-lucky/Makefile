@@ -14,6 +14,6 @@ LUCI_TITLE:=LuCI Support for  lucky
 LUCI_DEPENDS:=+lucky
 LUCI_PKGARCH:=all
 
-include $(TOPDIR)/feeds/luci/luci.mk
+include ../../luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
