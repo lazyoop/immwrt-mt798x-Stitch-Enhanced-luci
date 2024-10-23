@@ -47,6 +47,20 @@ msgid ""
 "before using Aria2, otherwise the session file will exhaust the available space."
 msgstr "注意: 使用Aria2前推荐修改配置文件到非squashfs区域,否则会话文件会将可用空间耗尽。"
 
+msgid "Steps: 1. Copy the profile directory to a new region."
+msgstr "使用步骤：1，复制配置文件目录到一个新区域。"
+
+msgid ""
+"2. Create a download directory, if you run as aria2 user, please set the correct "
+"directory permissions to ensure that aria2 can create files, it is not recommended to run as root user."
+msgstr "2，创建好下载目录，如果以aria2用户运行请设置正确的目录权限确保aria2能够创建文件，不建议以root用户运行。"
+
+msgid "3. Save the settings."
+msgstr "3，保存设置。"
+
+msgid "4. Turn on ARIA2."
+msgstr "4，开启aria2。"
+
 #: applications/luci-app-aria2/luasrc/model/cbi/aria2/config.lua:428
 msgid "Auto save interval"
 msgstr "自动保存间隔"

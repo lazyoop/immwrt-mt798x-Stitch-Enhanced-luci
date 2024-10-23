@@ -36,6 +36,10 @@ m = Map("aria2", "%s - %s" % { translate("Aria2"), translate("Settings") },
 "<p>%s</p><p>%s</p><p>%s</p>" % {
 	translate("Aria2 is a lightweight multi-protocol &amp; multi-source, cross platform download utility."),
 	translate("Note: It is recommended to modify the configuration file to a non-squashfs area before using Aria2, otherwise the session file will exhaust the available space."),
+	translate("Steps: 1. Copy the profile directory to a new region."),
+	translate("2. Create a download directory, if you run as aria2 user, please set the correct directory permissions to ensure that aria2 can create files, it is not recommended to run as root user."),
+	translate("3. Save the settings."),
+	translate("4. Turn on ARIA2."),
 	translatef("For more information, please visit: %s",
 		"<a href=\"https://aria2.github.io\" target=\"_blank\">https://aria2.github.io</a>")
 })
