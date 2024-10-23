@@ -33,7 +33,7 @@ end
 local aria2 = aria2_info()
 
 m = Map("aria2", "%s - %s" % { translate("Aria2"), translate("Settings") },
-"<p>%s</p><p>%s</p><p>%s</p>" % {
+"<p>%s</p><p>%s</p><p>%s</p><p>%s</p><p>%s</p><p>%s</p><p>%s</p>" % {
 	translate("Aria2 is a lightweight multi-protocol &amp; multi-source, cross platform download utility."),
 	translate("Note: It is recommended to modify the configuration file to a non-squashfs area before using Aria2, otherwise the session file will exhaust the available space."),
 	translate("Steps: 1. Copy the profile directory to a new region."),
