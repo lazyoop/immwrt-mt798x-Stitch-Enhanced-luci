@@ -11,8 +11,8 @@
 		"title": "qBittorrent Enhanced",
 		"order": 20,
 		"action": {
-			"type": "view",
-			"path": "qbittorrent"
+			"type": "alias",
+			"path": "admin/bittorrent/qbittorrent/config"
 		},
 		"depends": {
 			"acl": [ "luci-app-qbittorrent" ],
