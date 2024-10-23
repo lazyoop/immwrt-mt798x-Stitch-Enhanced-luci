@@ -1,5 +1,5 @@
 {
-	"admin/services/transmission": {
+	"admin/bittorrent/transmission": {
 		"title": "Transmission",
 		"action": {
 			"type": "view",
