@@ -65,8 +65,15 @@ msgstr ""
 #: applications/luci-app-qbittorrent/htdocs/luci-static/resources/view/qbittorrent/config.js:34
 #: applications/luci-app-qbittorrent/htdocs/luci-static/resources/view/qbittorrent/config.js:36
 #: applications/luci-app-qbittorrent/htdocs/luci-static/resources/view/qbittorrent/config.js:66
-#: applications/luci-app-qbittorrent/root/usr/share/luci/menu.d/luci-app-qbittorrent.json:3
 msgid "qBittorrent"
+msgstr ""
+
+#: applications/luci-app-qbittorrent/root/usr/share/luci/menu.d/luci-app-qbittorrent.json:11
+msgid "qBittorrent Enhanced"
+msgstr ""
+
+#: applications/luci-app-qbittorrent/root/usr/share/luci/menu.d/luci-app-qbittorrent.json:3
+msgid "BitTorrent"
 msgstr ""
 
 #: applications/luci-app-qbittorrent/htdocs/luci-static/resources/view/qbittorrent/config.js:67

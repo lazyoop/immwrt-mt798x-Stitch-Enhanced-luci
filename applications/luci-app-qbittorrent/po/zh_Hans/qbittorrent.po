@@ -72,9 +72,16 @@ msgstr "未知错误：%s"
 #: applications/luci-app-qbittorrent/htdocs/luci-static/resources/view/qbittorrent/config.js:34
 #: applications/luci-app-qbittorrent/htdocs/luci-static/resources/view/qbittorrent/config.js:36
 #: applications/luci-app-qbittorrent/htdocs/luci-static/resources/view/qbittorrent/config.js:66
-#: applications/luci-app-qbittorrent/root/usr/share/luci/menu.d/luci-app-qbittorrent.json:3
 msgid "qBittorrent"
-msgstr "qBittorrent"
+msgstr "qBittorrent加强版"
+
+#: applications/luci-app-qbittorrent/root/usr/share/luci/menu.d/luci-app-qbittorrent.json:11
+msgid "qBittorrent Enhanced"
+msgstr "qBittorrent加强版"
+
+#: applications/luci-app-qbittorrent/root/usr/share/luci/menu.d/luci-app-qbittorrent.json:3
+msgid "BitTorrent"
+msgstr "BT/(S)FTP/HTTP(S)下载"
 
 #: applications/luci-app-qbittorrent/htdocs/luci-static/resources/view/qbittorrent/config.js:67
 msgid ""

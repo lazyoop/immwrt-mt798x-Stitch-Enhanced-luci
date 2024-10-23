@@ -1,15 +1,25 @@
 {
-	"admin/services/qbittorrent": {
-		"title": "qBittorrent",
+	"admin/bittorrent": {
+		"title": "BitTorrent",
+		"order": 40,
 		"action": {
-			"type": "firstchild"
+			"type": "firstchild",
+			"recurse": true
+		}
+	},
+	"admin/bittorrent/qbittorrent": {
+		"title": "qBittorrent Enhanced",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "qbittorrent"
 		},
 		"depends": {
 			"acl": [ "luci-app-qbittorrent" ],
 			"uci": { "qbittorrent": true }
 		}
 	},
-	"admin/services/qbittorrent/config": {
+	"admin/bittorrent/qbittorrent/config": {
 		"title": "Settings",
 		"order": 10,
 		"action": {
@@ -17,7 +27,7 @@
 			"path": "qbittorrent/config"
 		}
 	},
-	"admin/services/qbittorrent/log": {
+	"admin/bittorrent/qbittorrent/log": {
 		"title": "Log",
 		"order": 20,
 		"action": {
