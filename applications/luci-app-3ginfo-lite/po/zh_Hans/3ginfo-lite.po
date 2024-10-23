@@ -243,7 +243,7 @@ msgstr "中间基站"
 #: applications/luci-app-3ginfo-lite/htdocs/luci-static/resources/view/modem/3gdetail.js:292
 #: applications/luci-app-3ginfo-lite/root/usr/share/luci/menu.d/luci-app-3ginfo-lite.json:3
 msgid "Modem"
-msgstr "模块"
+msgstr "移动通信模组"
 
 #: applications/luci-app-3ginfo-lite/htdocs/luci-static/resources/view/modem/3gdetail.js:187
 #: applications/luci-app-3ginfo-lite/htdocs/luci-static/resources/view/modem/3gdetail.js:195
