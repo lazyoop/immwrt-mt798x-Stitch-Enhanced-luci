@@ -166,3 +166,7 @@ msgstr ""
 #: applications/luci-app-watchcat/htdocs/luci-static/resources/view/watchcat.js:61
 msgid "Windows: 32 bytes"
 msgstr ""
+
+#: applications/luci-app-watchcat/root/usr/share/luci/menu.d/luci-app-watchcat.json:3
+msgid "Control"
+msgstr ""
