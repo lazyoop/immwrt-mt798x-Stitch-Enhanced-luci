@@ -104,3 +104,6 @@ msgstr "小时(0~23)【定时用】"
 msgid "Minute(0~59)"
 msgstr "分钟(0~59)【定时用】"
 
+#: applications/luci-app-autotimeset/luasrc/controller/autotimeset.lua:8
+msgid "Control"
+msgstr "管控"
