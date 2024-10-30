@@ -74,6 +74,7 @@ return view.extend({
 
 		m = new form.Map('alist', _('Alist'),
 			_('A file list program that supports multiple storage.') +
+			_('Notice: Before enabling it, it is recommended to modify the data directory to prevent the route storage space from being exhausted!') +
 			'<br><a href="https://alist.nn.ci/zh/guide/drivers/local.html" target="_blank">' +
 			_('User Manual') +
 			'</a>');

@@ -17,6 +17,11 @@ msgstr "打开 Web 界面"
 msgid "A file list program that supports multiple storage."
 msgstr "一款支持多种存储的目录文件列表程序。"
 
+msgid ""
+"Notice: Before enabling it, it is recommended to modify the data directory to prevent the route storage space "
+"from being exhausted!"
+msgstr "注意：开启前最好修改数据目录防止路由存储空间耗尽！"
+
 msgid "Setting"
 msgstr "设置"
 
