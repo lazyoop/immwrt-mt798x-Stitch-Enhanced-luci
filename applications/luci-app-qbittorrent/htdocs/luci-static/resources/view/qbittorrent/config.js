@@ -51,7 +51,9 @@ return view.extend({
 
 		m = new form.Map('qbittorrent', _('qBittorrent'),
 			_('qBittorrent is a bittorrent client programmed in C++ / Qt.<br />' +
-				'Default login username is <code>admin</code> and password is <code>adminadmin</code>.'));
+				'Default login username is <code>admin</code> and password is <code>adminadmin</code>.<br />') +
+			_('Note: Modify the download directory before use,<br />' +
+				'After startup, enter the web UI to modify the temporary directory and prevent the disk space from running out!'));
 
 		s = m.section(form.TypedSection);
 		s.anonymous = true;
