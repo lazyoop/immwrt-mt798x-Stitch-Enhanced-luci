@@ -8,7 +8,7 @@
 		}
 	},
 	"admin/bittorrent/qbittorrent": {
-		"title": "qBittorrent Enhanced",
+		"title": "qBittorrent",
 		"order": 20,
 		"action": {
 			"type": "alias",
