@@ -1,34 +1,34 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-02-15 09:20+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
-"luciapplicationswireguard/pt/>\n"
-"Language: pt\n"
+"PO-Revision-Date: 2021-02-20 08:36+0000\n"
+"Last-Translator: Ahmad Rulim <mfalkia342@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationswireguard/id/>\n"
+"Language: id\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.5\n"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:110
 msgid "Allowed IPs"
-msgstr "Endereços IP autorizados"
+msgstr "IP yang Diizinkan"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:116
 msgid "Data Received"
-msgstr "Dados Recebidos"
+msgstr "Data Diterima"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:118
 msgid "Data Transmitted"
-msgstr "Dados Transmitidos"
+msgstr "Data Ditransmisikan"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:108
 msgid "Endpoint"
-msgstr "Ponto final"
+msgstr "Titik akhir"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:99
 msgid "Firewall Mark"
-msgstr "Marca da Firewall"
+msgstr "Tanda Firewall"
 
 #: applications/luci-app-wireguard/root/usr/share/rpcd/acl.d/luci-app-wireguard.json:3
 msgid "Grant access to LuCI app wireguard"
@@ -36,15 +36,15 @@ msgstr ""
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:114
 msgid "Latest Handshake"
-msgstr "Último Aperto de Mão"
+msgstr "Handshake Terbaru"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:97
 msgid "Listen Port"
-msgstr "Porta de escuta"
+msgstr "Port untuk Didengarkan"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:15
 msgid "Never"
-msgstr "Nunca"
+msgstr "Tidak pernah"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:195
 msgid "Peers"
@@ -52,12 +52,12 @@ msgstr ""
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:112
 msgid "Persistent Keepalive"
-msgstr "Keepalive Persistente"
+msgstr "Keepalive Persisten"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:95
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:106
 msgid "Public Key"
-msgstr "Chave Pública"
+msgstr "Kunci Publik"
 
 #: applications/luci-app-wireguard/root/usr/share/luci/menu.d/luci-app-wireguard.json:3
 msgid "WireGuard"
@@ -65,64 +65,64 @@ msgstr "WireGuard"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:170
 msgid "WireGuard Status"
-msgstr "Estado do WireGuard"
+msgstr "Status WireGuard"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:25
 msgid "h ago"
-msgstr "h atrás"
+msgstr "jam yang lalu"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:23
 msgid "m ago"
-msgstr "m atrás"
+msgstr "menit yang lalu"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:27
 msgid "over a day ago"
-msgstr "mais de um dia atrás"
+msgstr "lebih dari sehari yang lalu"
 
 #: applications/luci-app-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:21
 msgid "s ago"
-msgstr "s atrás"
+msgstr "detik yang lalu"
 
 #~ msgid "Collecting data..."
-#~ msgstr "A recolher dados..."
+#~ msgstr "Mengumpulkan data..."
 
 #~ msgid "Configuration"
-#~ msgstr "Configuração"
+#~ msgstr "Konfigurasi"
 
 #~ msgid "Interface"
-#~ msgstr "Interface"
+#~ msgstr "Antarmuka"
 
 #~ msgid "Interface does not have a public key!"
-#~ msgstr "A interface não tem uma chave pública!"
+#~ msgstr "Antarmuka tidak memiliki kunci publik!"
 
 #~ msgid "Peer"
-#~ msgstr "Par"
+#~ msgstr "Rekan"
 
 #~ msgid "Show/Hide QR-Code"
-#~ msgstr "Mostrar/Ocultar Código QR"
+#~ msgstr "Tampilkan/Sembunyikan Kode QR"
 
 #~ msgid ""
 #~ "The QR-Code works per wg interface, it will be refreshed with every "
 #~ "manual page reload and transfers the following information:"
 #~ msgstr ""
-#~ "O Código QR funciona por interface wg, ele será atualizado a cada recarga "
-#~ "de página manual e transfere as seguintes informações:"
+#~ "Kode QR berfungsi per antarmuka wg, ia akan diperbarui setiap pemuatan "
+#~ "ulang halaman secara manual dan mentransfer informasi berikut:"
 
 #~ msgid "This section contains no values yet"
-#~ msgstr "Esta secção ainda não contém valores"
+#~ msgstr "Bagian ini belum berisi nilai"
 
 #~ msgid ""
 #~ "[Interface] A random, on the fly generated 'PrivateKey', the key will not "
 #~ "be saved on the router"
 #~ msgstr ""
-#~ "[Interface] Um aleatório PrivateKey', gerado quando necessário, a chave "
-#~ "não será gravada no roteador"
+#~ "[Antarmuka] Acak, dengan cepat menghasilkan 'KunciPublik', kunci tidak "
+#~ "akan disimpan pada router"
 
 #~ msgid ""
 #~ "[Peer] The 'PublicKey' of that wg interface and the 'AllowedIPs' with the "
 #~ "default of '0.0.0.0/0, ::/0' to allow sending traffic to any IPv4 and "
 #~ "IPv6 address"
 #~ msgstr ""
-#~ "[Par] A 'PublicKey' dessa interface wg e os 'AllowedIPs' com a "
-#~ "predefinição de '0.0.0.0.0/0, ::/0' para permitir enviar tráfego para "
-#~ "qualquer endereço IPv4 e IPv6"
+#~ "[Rekan] 'KunciPublik' dari antarmuka wg dan 'IPdiijinkan' dengan default "
+#~ "'0.0.0.0/0, :: / 0' untuk mengizinkan pengiriman lalu lintas ke alamat "
+#~ "IPv4 dan IPv6 mana pun"
