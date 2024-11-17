@@ -77,7 +77,7 @@ local methods = {
 							"network",
 							"wireguard_" .. line[1],
 							function(s)
-								if not s.disabled and s.public_key == line[2] and checkPeerHost(s.endpoint_host, s.endpoint_port, line[4]) then
+								if not s.disabled and s.public_key == line[2] and (not s.endpoint_host or checkPeerHost(s.endpoint_host, s.endpoint_port, line[4])) then
 									peer_name = s.description
 								end
 							end
