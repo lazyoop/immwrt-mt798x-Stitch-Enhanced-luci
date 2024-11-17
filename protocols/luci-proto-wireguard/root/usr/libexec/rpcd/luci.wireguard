@@ -7,6 +7,19 @@ local io = require "io"
 local uci = require "uci"
 local fs = require "nixio.fs"
 
+local function checkPeerHost(configHost, configPort, wgHost)
+	local ips = io.popen("resolveip " .. configHost .. " 2>/dev/null")
+	if ips then
+		for line in ips:lines() do
+			local ip = line:gsub('\n', '')
+			if ip .. ":" .. configPort == wgHost then
+				return true
+			end
+		end
+	end
+	return false
+end
+
 local methods = {
 	generatePsk = {
 		call = function()
@@ -36,10 +49,11 @@ local methods = {
 			local data = {}
 			local last_device = ""
 			local qr_pubkey = {}
-
+			local cur = uci.cursor()
 			local wg_dump = io.popen("wg show all dump 2>/dev/null")
 			if wg_dump then
 				local line
+				cur:load("network")
 				for line in wg_dump:lines() do
 					local line = string.split(line, "\t")
 					if not (last_device == line[1]) then
@@ -58,13 +72,12 @@ local methods = {
 						end
 					else
 						local peer_name
-						local cur = uci.cursor()
 
 						cur:foreach(
 							"network",
 							"wireguard_" .. line[1],
 							function(s)
-								if s.public_key == line[2] then
+								if not s.disabled and s.public_key == line[2] and checkPeerHost(s.endpoint_host, s.endpoint_port, line[4]) then
 									peer_name = s.description
 								end
 							end
