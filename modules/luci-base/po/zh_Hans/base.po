@@ -5543,6 +5543,12 @@ msgstr "对端 MAC 地址"
 msgid "Peer address is missing"
 msgstr "对端地址缺失"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:752
+msgid ""
+"The generated configuration can be imported into a WireGuard client "
+"application to set up a connection towards this device."
+msgstr "生成的配置可以导入到 WireGuard 客户端应用中来设置到该设备的连接。"
+
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:594
 msgid "Peer device name"
 msgstr "对端设备名"
