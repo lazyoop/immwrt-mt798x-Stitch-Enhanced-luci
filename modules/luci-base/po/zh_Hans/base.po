@@ -22,6 +22,18 @@ msgstr "%.1f dB"
 msgid "%d Bit"
 msgstr "%d Bit"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:26
+msgid "%dh ago"
+msgstr "%d 小时前"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:24
+msgid "%dm ago"
+msgstr "%d 分钟前"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:22
+msgid "%ds ago"
+msgstr "%d 秒前"
+
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:3721
 msgid "%d invalid field(s)"
 msgstr "%d 个无效字段"
@@ -704,7 +716,9 @@ msgid ""
 "Allow upstream responses in the 127.0.0.0/8 range, e.g. for RBL services"
 msgstr "允许 127.0.0.0/8 回环范围内的上行响应，例如：RBL 服务"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:626
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:609
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:782
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:56
 msgid "Allowed IPs"
 msgstr "允许的 IP"
 
@@ -1727,6 +1741,14 @@ msgstr "DUID"
 msgid "Data Rate"
 msgstr "数据速率"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:76
+msgid "Data Received"
+msgstr "已接收"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:77
+msgid "Data Transmitted"
+msgstr "已发送"
+
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:186
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:197
 msgid "Debug"
@@ -1802,6 +1824,7 @@ msgstr "发送流量指示消息间隔"
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/switch.js:342
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/system.js:139
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:519
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:53
 msgid "Description"
 msgstr "描述"
 
@@ -2015,6 +2038,8 @@ msgstr "磁盘空间"
 #: modules/luci-base/htdocs/luci-static/resources/ui.js:4166
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:1766
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js:358
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:45
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:66
 msgid "Dismiss"
 msgstr "关闭"
 
@@ -2429,6 +2454,11 @@ msgstr "封装模式"
 msgid "Encryption"
 msgstr "加密"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:55
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:75
+msgid "Endpoint"
+msgstr "传输端点"
+
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:664
 msgid "Endpoint Host"
 msgstr "端点主机"
@@ -2688,8 +2718,18 @@ msgid "Firewall"
 msgstr "防火墙"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:201
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:39
 msgid "Firewall Mark"
 msgstr "防火墙标识"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:125
+msgctxt "WireGuard instance heading"
+msgid "Instance \"%h\""
+msgstr "实例 \"%h\""
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:34
+msgid "Instance Details"
+msgstr "实例详情"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:482
 msgid "Firewall Settings"
@@ -4052,8 +4092,13 @@ msgid "Listen Interfaces"
 msgstr "监听接口"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:176
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:38
 msgid "Listen Port"
 msgstr "监听端口"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:167
+msgid "Loading data…"
+msgstr "加载数据中…"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:299
 msgid "ListenPort setting is invalid"
@@ -4662,8 +4707,22 @@ msgstr "候选 NTP 服务器"
 #: modules/luci-compat/luasrc/view/cbi/tblsection.htm:27
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1097
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/leds.js:67
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:36
 msgid "Name"
 msgstr "名称"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:16
+msgctxt "No WireGuard peer handshake yet"
+msgid "Never"
+msgstr "永不"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:148
+msgid "No WireGuard interfaces configured."
+msgstr "未配置 WireGuard 接口。"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:84
+msgid "No peers connected"
+msgstr "未连接对端"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/wireless.js:2004
 msgid "Name of the new network"
@@ -5530,6 +5589,19 @@ msgstr "暂停"
 msgid "Peak:"
 msgstr "峰值："
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:74
+msgid "Peer"
+msgstr "对端"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:51
+msgid "Peer Details"
+msgstr "对端详情"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:137
+msgctxt "WireGuard listen port"
+msgid "Port %d"
+msgstr "端口 %d"
+
 #: protocols/luci-proto-pppossh/htdocs/luci-static/resources/protocol/pppossh.js:89
 msgid "Peer IP address to assign"
 msgstr "要分配的对端 IP 地址"
@@ -5591,6 +5663,15 @@ msgstr "没有权限"
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:685
 msgid "Persistent Keep Alive"
 msgstr "持续 Keep-Alive"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:60
+msgid "Keep-Alive"
+msgstr "保活"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:59
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:78
+msgid "Latest Handshake"
+msgstr "上次握手"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:334
 msgid "PersistentKeepAlive setting is invalid"
@@ -5792,6 +5873,8 @@ msgstr "伪装 Ad-Hoc（ahdemo）"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:158
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:587
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:37
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:54
 msgid "Public Key"
 msgstr "公钥"
 
@@ -5800,9 +5883,23 @@ msgid "Public key is missing"
 msgstr "缺少公钥"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:558
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:101
 msgctxt "Tooltip displaying full WireGuard peer public key"
 msgid "Public key: %h"
 msgstr "公钥：%h"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:57
+msgid "Received Data"
+msgstr "已接收的数据"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:58
+msgid "Transmitted Data"
+msgstr "已传输的数据"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:520
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:97
+msgid "Untitled peer"
+msgstr "无标题的对端"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:305
 msgid "PublicKey setting is invalid"
@@ -8364,6 +8461,16 @@ msgstr ""
 msgid "Width"
 msgstr "带宽"
 
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:120
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:165
+msgid "WireGuard Status"
+msgstr "WireGuard 状态"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:60
+msgctxt "WireGuard keep alive interval"
+msgid "every %ds"
+msgstr "每 %d 秒"
+
 #: modules/luci-compat/luasrc/model/network/proto_wireguard.lua:9
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:29
 msgid "WireGuard VPN"
@@ -8700,8 +8807,15 @@ msgstr "非空值"
 
 #: modules/luci-base/htdocs/luci-static/resources/form.js:3201
 #: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:800
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:39
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:56
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:60
 msgid "none"
 msgstr "无"
+
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/view/wireguard/status.js:28
+msgid "over a day ago"
+msgstr "超过一天前"
 
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:41
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/mounts.js:55
