@@ -5553,8 +5553,8 @@ msgstr "生成的配置可以导入到 WireGuard 客户端应用中来设置到�
 msgid "Peer device name"
 msgstr "对端设备名"
 
-#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:510
-msgid "Disabled"
+#: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:515
+msgid "Peer disabled"
 msgstr "已禁用对端"
 
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:214
