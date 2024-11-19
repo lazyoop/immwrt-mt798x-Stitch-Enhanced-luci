@@ -7,11 +7,6 @@
 					"getWgInstances"
 				]
 			},
-			"ubus": {
-				"luci.wireguard": [
-					"getWgInstances"
-				]
-			},
 			"uci": [ "ddns", "system" ]
 		},
 		"write": {
