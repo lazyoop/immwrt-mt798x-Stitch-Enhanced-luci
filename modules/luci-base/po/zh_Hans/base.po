@@ -50,6 +50,36 @@ msgstr "%s 在多个 VLAN 中均未标记！"
 msgid "(%d minute window, %d second interval)"
 msgstr "（最近 %d 分钟信息，每 %d 秒刷新）"
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1000
+msgid "12h (12 hours - default)"
+msgstr "12h（12 小时 - 默认）"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:998
+msgid "5m (5 minutes)"
+msgstr "5m（5 分钟）"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:999
+msgid "3h (3 hours)"
+msgstr "3h（3 小时）"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1001
+msgid "7d (7 days)"
+msgstr "7d（7 天）"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:995
+msgid "Preferred lifetime for a prefix."
+msgstr "前缀的首选有效期。"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1004
+msgid "Follow IPv4 Lifetime"
+msgstr "遵守 IPv4 有效期"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1004
+msgid ""
+"DHCPv4 <code>leasetime</code> is used as limit and preferred lifetime of the "
+"IPv6 prefix."
+msgstr "DHCPv4 <code>租约</code> 被用作 IPv6 前缀的限制和首选有效期。"
+
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:118
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:124
 #: modules/luci-base/htdocs/luci-static/resources/tools/widgets.js:259
@@ -1838,6 +1868,27 @@ msgctxt "Label indicating that WireGuard peer is disabled"
 msgid "Disabled"
 msgstr "已禁用"
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:571
+msgid "Disable this interface"
+msgstr "禁用该接口"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:951
+msgid "NTP Servers"
+msgstr "NTP 服务器"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:952
+msgctxt "DHCPv6 option 56. RFC5908 link"
+msgid "DHCPv6 option 56. %s."
+msgstr "DHCPv6 选项 56。%s。"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:986
+msgid "Set up routes for proxied IPv6 neighbours."
+msgstr "设置已代理 IPv6 邻居的路由。"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:995
+msgid "IPv6 Prefix Lifetime"
+msgstr "IPv6 前缀有效期"
+
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:615
 msgid "Do you want to replace the current PSK?"
 msgstr "是否要替换当前的 PSK？"
@@ -2422,6 +2473,36 @@ msgstr "启用单播泛洪"
 #: modules/luci-mod-system/htdocs/luci-static/resources/view/system/startup.js:66
 msgid "Enabled"
 msgstr "已启用"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1564
+msgid "Enabled (all CPUs)"
+msgstr "已启用（所有CPU）"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1569
+msgid "Steering flows (<abbr title=\"Receive Packet Steering\">RPS</abbr>)"
+msgstr ""
+"流量导向（<abbr title=\"Receive Packet Steering （接收数据包导向）\">RPS</"
+"abbr>）"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1572
+msgid "Standard: none"
+msgstr "标准: 无"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1573
+msgid "Suggested: 128"
+msgstr "建议: 128"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1570
+msgid ""
+"Directs packet flows to specific CPUs where the local socket owner listens "
+"(the local service)."
+msgstr "将数据包流定向到特定的CPU，以便于本地套接字所有者（即本地服务）监听。"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1571
+msgid ""
+"Note: this setting is for local services on the device only (not for "
+"forwarding)."
+msgstr "注意: 此设置仅适用于设备上的本地服务 (不适用于转发)。"
 
 #: modules/luci-mod-network/htdocs/luci-static/resources/tools/network.js:538
 msgid "Enables IGMP snooping on this bridge"
@@ -4688,6 +4769,18 @@ msgstr "NAT-T 模式"
 #: protocols/luci-proto-ipv6/htdocs/luci-static/resources/protocol/464xlat.js:41
 msgid "NAT64 Prefix"
 msgstr "NAT64 前缀"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:843
+msgid "NAT64 prefix"
+msgstr "NAT64 前缀"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:843
+msgid ""
+"Announce NAT64 prefix in <abbr title=\"Router Advertisement\">RA</abbr> "
+"messages."
+msgstr ""
+"在 <abbr title=\"Router Advertisement（路由器通告）\">RA</abbr> 消息中宣布 "
+"NAT64 前缀。"
 
 #: modules/luci-compat/luasrc/model/network/proto_ncm.lua:26
 #: protocols/luci-proto-ncm/htdocs/luci-static/resources/protocol/ncm.js:31
@@ -7937,6 +8030,10 @@ msgstr "无法重启防火墙：%s"
 msgid "Unable to save contents: %s"
 msgstr "无法保存内容：%s"
 
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1380
+msgid "Unconfigure"
+msgstr "取消配置"
+
 #: modules/luci-mod-status/htdocs/luci-static/resources/view/status/include/50_dsl.js:32
 msgid "Unavailable Seconds (UAS)"
 msgstr "不可用秒数（UAS）"
@@ -7945,16 +8042,23 @@ msgstr "不可用秒数（UAS）"
 msgid "Unexpected reply data format"
 msgstr "错误的数据回复格式"
 
-#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1463
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1556
 msgid ""
-"Unique Local Address - in the range <code>fc00::/7</code>. Typically only "
-"within the &#8216;local&#8217; half <code>fd00::/8</code>. ULA for IPv6 is "
-"analogous to IPv4 private network addressing. This prefix is randomly "
-"generated at first install."
-msgstr ""
-"唯一本地地址 - 在 <code>fc00::/7</code> 范围内。通常仅在 &#8216;本地&#8217; "
-"的一半 <code>fd00::/8</code> 之内。用于IPv6的ULA与IPv4专用网络寻址类似。此前"
-"缀在首次安装时随机生成。"
+"Unique Local Address (%s) - prefix <code>fd00::/8</code> (the L bit is "
+"always 1)."
+msgstr "唯一本地地址 (%s) - 前缀为 <code>fd00::/8</code> (其中L位始终为1)。"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1557
+msgid "ULA for IPv6 is analogous to IPv4 private network addressing."
+msgstr "ULA 在 IPv6 中的作用类似于 IPv4 中的私有网络地址。"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1558
+msgid "This prefix is randomly generated at first install."
+msgstr "此前缀在首次安装时随机生成。"
+
+#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js:1561
+msgid "Enable packet steering across CPUs. May help or hinder network speed."
+msgstr "启用跨CPU的数据包引导。可能有助于提高或降低网络速度。"
 
 #: modules/luci-base/htdocs/luci-static/resources/network.js:2111
 #: modules/luci-compat/luasrc/model/network.lua:971
