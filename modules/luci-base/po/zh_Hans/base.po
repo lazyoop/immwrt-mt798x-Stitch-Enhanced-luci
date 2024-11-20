@@ -2895,6 +2895,10 @@ msgstr "生成配置"
 msgid "Generate configuration…"
 msgstr "生成配置…"
 
+#: modules/luci-base/htdocs/luci-static/resources/ui.js:4206
+msgid "Upload has been cancelled"
+msgstr ""
+
 #: protocols/luci-proto-wireguard/htdocs/luci-static/resources/protocol/wireguard.js:109
 msgid "Generate new key pair"
 msgstr "生成新的密钥对"
